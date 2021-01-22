@@ -18,7 +18,7 @@
     font-style: normal;
 }
 body{
-    background: url(image/patternlebon.jpg);
+    background: url(image/patternlebon.jpg)fixed;
     font-family: 'kaushan_scriptregular';
     width:auto;
 }
@@ -75,8 +75,8 @@ nav a{
     text-decoration:none;
 }
 a:hover{
-    color:rgb(114, 107, 117);
-    border-bottom: 2px rgb(114, 107, 117) solid; 
+    color:rgb(99, 8, 50);
+    border-bottom: 2px rgb(99, 8, 50) solid; 
 }
 #banniere_image{
     width:auto;
@@ -210,6 +210,6 @@ footer li{
 }
 #tweet{
     position: relative;
-    right:35px
+    right:25px;
 }
 
