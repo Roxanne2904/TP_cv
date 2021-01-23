@@ -21,6 +21,8 @@ body{
     background: url(image/patternlebon.jpg)fixed;
     font-family: 'kaushan_scriptregular';
     width:auto;
+    padding:0 50px 0px 50px;
+
 }
 header{
     width:100%;
@@ -78,7 +80,6 @@ a:hover{
     border-bottom: 2px rgb(99, 8, 50) solid; 
 }
 #banniere_image{
-    width:auto;
     margin-top:15px; 
     height:400px;
     border-radius:5px;
@@ -147,7 +148,7 @@ article p{
     text-align:justify;
 }
 aside{
-    height: 460px;
+    height: 485px;
     flex:1;
     position:relative;
     background-color: #706b64;
@@ -281,7 +282,7 @@ footer li{
     
     }
     #photo_rox img {
-        width:110px;
+        width:200px;
         float:right;
         margin-left:15px;
     }
@@ -290,63 +291,76 @@ footer li{
         text-align: center;
         text-align: justify;
     }
-}
-
-@media screen and (max-width:800px){
-    #titre{
-        display:flex;
-        flex-direction:column;
-        align-items:initial;
-        height:120px;
-        width:290px;
-    }
-    .logo{
-        position: relative;
-        top: 8px;
-        margin-right:8px;
-        width:50px;
-        height:50px;
-    }
-    #logo_titre{
-        position: relative;
-        top: 10px;
-        width:285px;
-        height:70px; 
-        display:flex;
-        align-items:baseline; 
-        padding-top:10px;
-        padding-left:5px;
-    }
-    
-    header h1{
-        font-family:'qwigleyregular';
+    article p {
         font-size:2em;
     }
-    header h2{
-        position: relative;
-        top:6px;
-        left: 10px;
-        font-weight:normal;
-        text-align:start;
-        font-size:1em;
+    article h1{
+        font-size:2.25em;
     }
-    nav li{
-        font-size:1em;
+    aside p{
+        font-size:1.8em;
+    }
+    aside h1{
+        font-size: 2.25em;
     }
     article h1{
-        font-size:1.2em;
+        font-size:2em;
+    }
+    .social{
+        position: relative;
+        bottom:40px;
+        width:70px;
+        height:70px;
+        margin:5px;
+        border-radius:5px;
     }
     footer{
         flex-direction:column;
         margin:0px 30px 30px 30px;
     }
     .footer_h1{
-        font-size:0.8em;
-        text-decoration: overline;
+        font-size:1.5em;
     }
     #tweet{
         position: relative;
         left:3px;
+    }
+    footer p, #list_puce{
+        font-size:1.8em;
+    }
+    .photo{
+        width:200px;
+        height:200px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    #tweet{
+        margin-top: 16px;
+        position: relative;
+        top:15px;
+    }
+}
+
+@media screen and (min-width:1500px){
+    #banniere_image{
+        margin-top:15px; 
+        height:650px;
+        border-radius:5px;
+        background:url('image/banniere.jpg') no-repeat;
+        background-size:cover;
+        box-shadow:0px 4px 4px #1c1a19;
+        margin-bottom:25px;
+        position: relative;
+    }
+    aside{
+        height:470px;
+    }
+    #banniere_infos{
+        width:99.6%;
+    }
+    #photo_rox img {
+        width:160px;
     }
 }
 
