@@ -292,3 +292,63 @@ footer li{
     }
 }
 
+@media screen and (max-width:800px){
+    #titre{
+        display:flex;
+        flex-direction:column;
+        align-items:initial;
+        height:120px;
+        width:290px;
+    }
+    .logo{
+        position: relative;
+        top: 8px;
+        margin-right:8px;
+        width:50px;
+        height:50px;
+    }
+    #logo_titre{
+        position: relative;
+        top: 10px;
+        width:285px;
+        height:70px; 
+        display:flex;
+        align-items:baseline; 
+        padding-top:10px;
+        padding-left:5px;
+    }
+    
+    header h1{
+        font-family:'qwigleyregular';
+        font-size:2em;
+    }
+    header h2{
+        position: relative;
+        top:6px;
+        left: 10px;
+        font-weight:normal;
+        text-align:start;
+        font-size:1em;
+    }
+    nav li{
+        font-size:1em;
+    }
+    article h1{
+        font-size:1.2em;
+    }
+    footer{
+        flex-direction:column;
+        margin:0px 30px 30px 30px;
+    }
+    .footer_h1{
+        font-size:0.8em;
+        text-decoration: overline;
+    }
+    #tweet{
+        position: relative;
+        left:3px;
+    }
+}
+
+
+
