@@ -86,7 +86,7 @@ a:hover{
     background-size:cover;
     box-shadow:0px 4px 4px #1c1a19;
     margin-bottom:25px;
-    position:relative;
+    position: relative;
 }
 #banniere_infos{
     position:absolute;
@@ -98,7 +98,7 @@ a:hover{
     padding-left:8px;
     background-color:rgba(24,24,24,0.8);
     color:white;
-    font-size:0.8em;
+    font-size:0.95em;
 }
 .bouton_rouge{
     height:25px;
@@ -110,9 +110,8 @@ a:hover{
     border-radius:5px;
     font-size:1.2em;
     text-align:center;
-    padding:4px 8px 0px 8px;
-    margin-bottom:2px;
-    margin-right:2px;
+    padding:4px 8px 4px 8px;
+    margin-right: 2px;
     color:white;
     text-decoration:none;
 }
@@ -120,16 +119,27 @@ a:hover{
     padding-left:5px;
 }
 .fleche{
+    position:relative;
+    left: 4px;
+    bottom: 2px;
     width:13px;
     height:13px;
 }
-.h1{
+aside h1{
    font-size:1.3em;
+   text-align: center;
+}
+article h1{
+    font-size:1.3em;
 }
 #presentation{
     display:flex;
 }
 article{
+    background-color: #33192959;
+    padding: 0px 10px 0px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #33192959;
     margin-right: 20px;
     flex:3;
 }
@@ -137,12 +147,13 @@ article p{
     text-align:justify;
 }
 aside{
-    flex:1.2;
+    height: 460px;
+    flex:1;
     position:relative;
     background-color: #706b64;
     box-shadow: 6px 6px 5px #1c1a19;
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px 10px 30px 10px;
     color:white;
     font-size: 0.9em;
 }
@@ -154,7 +165,7 @@ aside p{
     width:100%;
     height:40px;
     display:flex;
-    justify-content:space-around;
+    justify-content:center;
 }
 .social{
     width:40px;
@@ -256,10 +267,14 @@ footer li{
     #presentation{
         flex-direction: column;
     }
-    
+    article{
+        margin-top:15px;
+        
+    }
     article,aside{
         width:auto;
         margin-bottom: 15px;
+        margin-right:auto;
     }
     #fleche_bulle{
         display:none;
@@ -275,7 +290,5 @@ footer li{
         text-align: center;
         text-align: justify;
     }
-    
-   
 }
 
